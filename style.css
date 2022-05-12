@@ -1,0 +1,37 @@
+body {
+  margin: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  background: #333;
+}
+
+.container {
+  max-width: 760px;
+  margin: auto;
+  border: #fff solid 3px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
